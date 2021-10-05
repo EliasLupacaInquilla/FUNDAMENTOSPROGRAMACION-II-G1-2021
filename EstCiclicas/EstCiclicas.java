@@ -21,3 +21,22 @@ static void suma20mumerosPares(){
   }
   
 }
+  static void menuOpciones(){ 
+    int opcionesA=0;
+    System.out.println("-------------------------------");
+    String msg="\nIngrese el Algoritmo que desea Probar 1=xxxx,2=xxxx,3=numeros pares:";
+    System.out.println(msg);
+    opcionesA=sc.nextInt();  
+    while(opcionesA!=0){
+        switch(opcionesA) {
+          case 1: suma20mumerosParesWhile();break;
+          case 2: suma20mumerosParesFor();break;
+          default:
+            System.out.println("El Algoritmo no existe!");
+        }   
+      System.out.println("------------------------------");  
+      System.out.println(msg);
+      opcionesA=sc.nextInt();        
+    }
+  }
+  
