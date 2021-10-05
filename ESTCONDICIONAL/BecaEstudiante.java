@@ -1,4 +1,4 @@
-   import java.util.Scanner;
+          import java.util.Scanner;
    public class BecaEstudiante {
    static Scanner sc = new Scanner(System.in);
 
@@ -45,4 +45,18 @@
     becaPresEst();
   }
 
+}
+static void suma20numerosPares(){
+//declarar variable
+int numInit=1, sumaNumPar=0;
+//Proceso
+while(numInit <= 20) {
+if(numInit%2==0){
+  sumaNumPar+sumaNumPar+numInit;
+}
+numInit++;//numInit=numInit+1;
+}
+
+//datos de salida
+sistem.out.println("la suma de numeros pares entre 1 y 20 es:"+sumaNumPar);
 }
