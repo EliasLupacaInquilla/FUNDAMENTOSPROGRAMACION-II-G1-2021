@@ -1,4 +1,4 @@
-
+ 
 #Datos de entrada
 nota1=float(input("ingrese nota de evaluacion 1:"))
 nota2=float(input("ingrese nota de evaluacion 2:"))
