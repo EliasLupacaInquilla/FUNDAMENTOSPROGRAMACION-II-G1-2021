@@ -1,8 +1,10 @@
+package TAREA_2;
+
 import java.util.Scanner;
-  public class DiezEjercicios_ELI {
+  public class DiezEjercicios {
      static Scanner sc = new Scanner(System.in);
 
-      static void AhorroDeunaPersona() {      
+      static void AhoroDeunaPersona() {      
          //variables
          double ahorrodiario;
          //datos de entrada;
@@ -16,7 +18,7 @@ import java.util.Scanner;
 
         }
       }
-      static void Aprobadosydesaprovados_ELI() {
+      static void Aprobadosydesaprovados() {
         Scanner sc = new Scanner(System.in);
         int aprobados, i, n, reprobados;
         double calificacion, calificacion_aprobatoria;
@@ -43,7 +45,7 @@ import java.util.Scanner;
         System.out.println("Valor de aprobados: " + aprobados);
         System.out.println("Valor de reprobados: " + reprobados); 
        }
-      static void ClienteDelBanco_ELI() {
+      static void ClienteDelBanco() {
         double Dmensual, IfijoAnual, monto=0, capAnual=0;
         int meses, Naños;
         //datos de entrada
@@ -60,7 +62,7 @@ import java.util.Scanner;
             " \ny su monto (capital + interes que recibe) es: "+monto);   
         } 
       }
-    static void ColorDEfocos_ELI(){
+    static void ColorDEfocos(){
             //definir Variables
             int NFocos, FVerde=0, FBlanco=0, FRojo=0;
             //Datos de entrada
@@ -81,7 +83,7 @@ import java.util.Scanner;
             FBlanco+" son Blanco(s)\n"+FRojo+" son Rojo(s)\nEn  cantidad total son:"+NFocos);  
     }
   
-     static void CuboDeNumeros_ELI(){
+     static void CuboDeNumeros(){
               //varibles 
               int numero=0, resultado=0;
               do {
@@ -91,7 +93,7 @@ import java.util.Scanner;
                   System.out.println("el cubo del numero "+numero+" es: "+resultado);
               } while (numero>0); 
       }
-      static void ElNaufragoSatisfecho_ELI(){
+      static void ElNaufragoSatisfecho(){
         int forma_de_pago, i, n, tipo_de_hamburguesa;
         double cargo, costo, pago;
         pago = 0;
@@ -139,7 +141,7 @@ import java.util.Scanner;
         }
         System.out.println("Valor de pago: " + pago);
     }
-    static void ImpuestoAutomotriz_ELI(){
+    static void ImpuestoAutomotriz(){
       int i, n;
       double categoria_1, categoria_2, categoria_3, clave, costo;
       double impuesto, impuesto_a_pagar;
@@ -187,7 +189,7 @@ import java.util.Scanner;
       System.out.println("Valor de categoria 3: " + categoria_3);
       System.out.println("Valor de impuesto a pagar: " + impuesto_a_pagar);
   }
-    static void Monedero_ELI(){
+    static void Monedero(){
         int billetes_de_cincuenta, billetes_de_diez, billetes_de_veinte, cantidad_de_dinero, monedas_de_cinco;
         int monedas_de_diez, monedas_de_un_peso;
         System.out.print("Ingresa el valor de billetes de cincuenta: ");
@@ -211,7 +213,7 @@ import java.util.Scanner;
         cantidad_de_dinero=monedas_de_diez*10+monedas_de_cinco*5+monedas_de_un_peso+billetes_de_diez*10+billetes_de_veinte*20+billetes_de_cincuenta*50;
         System.out.println("Valor de cantidad de dinero: " + cantidad_de_dinero);
       }
-      static void MultiplicacionDeUnEntero_ELI(){
+      static void MultiplicacionDeUnEntero(){
         System.out.println("Tabla de multiplicación");
     //variables
     int n, multiplicador;
@@ -231,7 +233,7 @@ import java.util.Scanner;
     }
 
       //ejercicio 4.8
-    static void PagoDeArticulos_ELI() { 
+    static void PagoDe_N_Articulos() { 
       int i, n;
       double costo, descuento, pago_por_todo, precio;
       pago_por_todo = 0;
@@ -260,7 +262,7 @@ import java.util.Scanner;
 
 
     
-    static void menuOpciones ELI(){ 
+    static void menuOpciones_GFYM(){ 
     // datos de entrada  
     int opcionesA=0;
           String msg="\n ELIJA LAS OPCIONES DISPONIBLES";
@@ -290,16 +292,16 @@ import java.util.Scanner;
           //Proceso 
             while(opcionesA!=0){
                 switch(opcionesA) {
-                case 1:AhoroDeunaPersona_ELI();break;
-                case 2:Aprobadosydesaprovados_ELI();break;
-                case 3:ClienteDelBanco_ELI();break;  
-                case 4:ColorDEfocos_ELI();break;
-                case 5:CuboDeNumeros_ELI();break; 
-                case 6:ElNaufragoSatisfecho_ELI();break;
-                case 7:ImpuestoAutomotriz_ELI();break; 
-                case 8:Monedero_ELI();break;
-                case 9:MultiplicacionDeUnEntero_ELI();break;
-                case 10:PagoDeArticulos_ELI();break;          
+                case 1:AhoroDeunaPersona();break;
+                case 2:Aprobadosydesaprovados();break;
+                case 3:ClienteDelBanco();break;  
+                case 4:ColorDEfocos();break;
+                case 5:CuboDeNumeros();break; 
+                case 6:ElNaufragoSatisfecho();break;
+                case 7:ImpuestoAutomotriz();break; 
+                case 8:Monedero();break;
+                case 9:MultiplicacionDeUnEntero();break;
+                case 10:PagoDe_N_Articulos();break;          
           //fin   
                 default:
                 System.out.println("Vuelva a escribir el algoritmo!");
@@ -314,7 +316,7 @@ import java.util.Scanner;
       System.out.println("************************************");
       System.out.println("* BIENVENIDOS AL PANEL DE OPCIONES *");
       System.out.println("************************************");
-      menuOpciones_ELI();
+      menuOpciones_GFYM();
       sc.close();
     }
   }
